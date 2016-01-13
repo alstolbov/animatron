@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+        <title>Fullscreen Background Image Slideshow with CSS3</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <meta name="description" content="Fullscreen Background Image Slideshow with CSS3 - A Css-only fullscreen background image slideshow" />
+        <meta name="keywords" content="css3, css-only, fullscreen, background, slideshow, images, content" />
+        <meta name="author" content="Codrops" />
+        <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    </head>
+    <body id="page">
+        <div class="cb-slideshow" id="wrapper">
+            <span id="testBlock"></span>
+        </div>
+        <div class="form">
+            <form>
+                <div style="text-align: center;">
+                    <div id="update" class="btn">update</div>
+                </div>
+                <br/><br/>
+                <label>Size:</label>
+                <select id="size">
+                    <option value="150px 100px">small</option>
+                    <option value="350px 300px">medium</option>
+                    <option value="100% 100%">full-size</option>
+                </select>
+                <label>Theme name:</label>
+                <input type="text" id="themeName" value="test">
+                <label>Bg color:</label>
+                <input type="text" id="bgColor" value="#fff">
+                <label>Img src:</label>
+                <input type="text" id="image" value="https://zima26f.storage.yandex.net/rdisk/650b87b8c2e61c6a153c0b28d4972e99629c42453777e4062c372105aafab300/inf/u4lH5RfKDJZ9FIiPDG3EZeB2b5cr8v_-xDux13UlJxLQRt-KWA5UkQQvJW9NRBNUQWzuiZ9mJFUHXBMP8krRFA==?uid=322026610&filename=918225-white-clouds-wallpaper.jpg&disposition=inline&hash=&limit=0&content_type=image%2Fjpeg&tknv=v2&rtoken=f2d29e68065c34bf89dbbe33492d580d&force_default=yes&ycrid=na-712db580ada4872953b19b46a645b65b-downloader7d">
+                <label>Time:</label>
+                <input type="text" id="time" value="36s">
+                <br/>
+                <input type="checkbox" id="direction" name="direction">
+                <label for="direction">Direction Animation</label>
+                <div id="directionWr" style="display: none;">
+                    <label>Direct X animation:</label>
+                    <select id="directX">
+                        <option>center</option>
+                        <option>left</option>
+                        <option>right</option>
+                    </select>
+                    <label>Direct Y animation::</label>
+                    <select id="directY">
+                        <option>center</option>
+                        <option>top</option>
+                        <option>bottom</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <script type="text/javascript" src="js/main.js"></script>
+    </body>
+</html>
